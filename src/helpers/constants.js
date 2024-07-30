@@ -20,14 +20,14 @@ export const constants = {
   ],
   WEAPONS: [
     { url:'https://ucarecdn.com/a9667f1e-a16a-401a-afea-b079049c5ca1/Icon28_37.png', name: "Tech Sworsd", mod: 1, attr: "streight", equipped: false },
-    { url:'https://ucarecdn.com/eac9e589-4d95-405c-bf69-a572ca9ef8f9/Icon28_40.png', name: "Tech Katana", mod: 1, attr: "streight", equipped: false  },
-    { url:'https://ucarecdn.com/65e06459-bb54-48aa-99b4-ed559711e248/Icon28_33.png', name: "Tech Hammer", mod: 1, attr: "tank", equipped: false  },
-    { url:'https://ucarecdn.com/c6fb30ae-1309-4caf-9ad1-dc8f8105fa50/Icon28_36.png', name: "Heavy Sword", mod: 1, attr: "streight", equipped: false  },
-    { url:'https://ucarecdn.com/2bc22928-048f-4610-a98f-da38550aa06e/Icon28_22.png', name: "Future Septre" , mod: 1, attr: "intelligence",equipped: false  },
-    { url:'https://ucarecdn.com/195bf7e7-c0ad-44d2-9a07-dd3d85375ef2/Icon28_10.png', name: "Chainsaw Muderer",mod: 1,attr: "streight",equipped: false  },
-    { url:'https://ucarecdn.com/810cc07b-e842-4c8e-9f3e-925dcbc4e4e5/Icon28_28.png', name: "Golden Sword",mod: 1,attr: "streight",equipped: false  },
-    { url:'https://ucarecdn.com/5ac05539-d329-41b7-97e9-315b7bebf942/Icon20.png', name: "Snow Arch", mod: 1, attr: "dexterity",equipped: false  },
-    { url:'https://ucarecdn.com/b68cd1d8-bc6f-4d7e-88b1-8af821ecf1a9/Icon3.png', name: "Blood Arch", mod: 1,attr: "dexterity",equipped: false  },
-    { url:'https://ucarecdn.com/497b7a6b-4abb-4c8a-8aac-f7481eaeb629/Icon1.png', name: "Poinson Arch", mod: 1,attr: "dexterity",equipped: false  }
+    { url:'https://ucarecdn.com/eac9e589-4d95-405c-bf69-a572ca9ef8f9/Icon28_40.png', name: "Tech Katana", mod: 6, attr: "wisdom", equipped: false  },
+    { url:'https://ucarecdn.com/65e06459-bb54-48aa-99b4-ed559711e248/Icon28_33.png', name: "Tech Hammer", mod: 8, attr: "constitution:", equipped: false  },
+    { url:'https://ucarecdn.com/c6fb30ae-1309-4caf-9ad1-dc8f8105fa50/Icon28_36.png', name: "Heavy Sword", mod: 9, attr: "streight", equipped: false  },
+    { url:'https://ucarecdn.com/2bc22928-048f-4610-a98f-da38550aa06e/Icon28_22.png', name: "Future Septre" , mod: 4, attr: "intelligence",equipped: false  },
+    { url:'https://ucarecdn.com/195bf7e7-c0ad-44d2-9a07-dd3d85375ef2/Icon28_10.png', name: "Chainsaw Muderer",mod: 2,attr: "streight",equipped: false  },
+    { url:'https://ucarecdn.com/810cc07b-e842-4c8e-9f3e-925dcbc4e4e5/Icon28_28.png', name: "Golden Sword",mod: 5,attr: "streight",equipped: false  },
+    { url:'https://ucarecdn.com/5ac05539-d329-41b7-97e9-315b7bebf942/Icon20.png', name: "Snow Arch", mod: 6, attr: "dexterity",equipped: false  },
+    { url:'https://ucarecdn.com/b68cd1d8-bc6f-4d7e-88b1-8af821ecf1a9/Icon3.png', name: "Blood Arch", mod: 10,attr: "dexterity",equipped: false  },
+    { url:'https://ucarecdn.com/497b7a6b-4abb-4c8a-8aac-f7481eaeb629/Icon1.png', name: "Poinson Arch", mod: 3,attr: "charisma",equipped: false  }
 ]
 }
