@@ -22,8 +22,15 @@ async function deleteKnight (id) {
   return result
 }
 
+async function getKnight (id) {
+  const formattedUrl = `${API_URL}/knights/${id}`
+  const result = await callApiService.callApi(formattedUrl, 'get')
+  return result
+}
+
 export const knightsService = {
   getAllKnights,
   createKnight,
-  deleteKnight
+  deleteKnight,
+  getKnight
 }

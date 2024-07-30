@@ -176,65 +176,45 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import '@/assets/scss/mixins.scss';
 .create {
   animation: myAnim .2s ease 0s 1 normal forwards;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #011526;
+  background-color: $knight-theme-c;
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 30px;
   height: 100%;
   overflow-x: hidden;
 }
-@keyframes myAnim {
-	0% {
-		transform: scaleX(0.4);
-		transform-origin: 0% 0%;
-	}
-
-	100% {
-		transform: scaleX(1);
-		transform-origin: 0% 0%;
-	}
-}
 .create::-webkit-scrollbar {
-  height: 10px;
-  width: 10px;
+  height: 7px;
+  width: 7px;
 }
 .create::-webkit-scrollbar-track {
-  border-radius: 5px;
-  background-color: #C1C1FF;
-}
-
-.create::-webkit-scrollbar-track:hover {
-  background-color: #B8C0C2;
+  border-radius: 3px;
+  background-color: gray;
 }
 
 .create::-webkit-scrollbar-track:active {
-  background-color: #B8C0C2;
+  background-color: gray;
 }
 
 .create::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-color: #4A7A8C;
+  border-radius: 3px;
+  background-color: $knight-theme-f;
 }
+  
 
-.create::-webkit-scrollbar-thumb:hover {
-  background-color: #62A34B;
-}
-
-.create::-webkit-scrollbar-thumb:active {
-  background-color: #62A34B;
-}
 .card-content {
-  margin-bottom: 10px;
+  margin-bottom: $gutter;
 }
 .header-weapon {
   display: flex;
   p {
-    margin-left: 10px;
+    margin-left: $gutter;
   }
 }
 
@@ -246,28 +226,28 @@ export default {
   display: flex;
   justify-content: space-between;
   div {
-    margin-bottom: 20px;
+    margin-bottom: $gutter;
   }
 }
 
 .attributes-switch {
   display: block;
-  margin-top: 10px;
+  margin-top: $gutter;
   span {
-    color:orange
+    color: $knight-theme-d
   }
   .switch-value {
     display: inline-block;
     width: 140px;
-    margin: 10px 40px 10px 0;
+    margin: $gutter;
   }
 }
 
 .buttons-submit{
   text-align: right;
-  margin-top: 80px;
+  margin-top: $gutter;
   button {
-    margin: 10px;
+    margin: $gutter;
   }
 }
 .error-message {

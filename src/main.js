@@ -3,7 +3,7 @@ import App from './App.vue'
 import Buefy from 'buefy'
 import { router } from './router'
 import 'buefy/dist/buefy.css'
-import './assets/custom-bulma.scss'
+import './assets/scss/custom-bulma.scss'
 Vue.use(Buefy)
 
 Vue.config.productionTip = false

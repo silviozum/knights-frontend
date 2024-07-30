@@ -11,4 +11,8 @@ export default {
 };
 </script>
 <style>
+#app {
+  padding: 30px;
+  background-color: #C3D3E3;
+}
 </style>

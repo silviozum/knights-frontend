@@ -22,26 +22,28 @@
             <div><p class="subtitle is-6">attack: <span class="attk-label">{{ data.attack }}</span></p></div>
           </div>
         </div>
-
       </div>
 
       <div class="content">
         <div class="columns">
           <div class="column left">
+            <b-button @click="goToDetail(data._id)">
+                Detail
+            </b-button>
             <div class="infos b-tooltips">
               <b-tooltip label="Attribute" position="is-bottom">
-                <div>
-                  <span class="infos-icon attr-icon"></span> <p class="subtitle is-6">{{ data.attribute }} </p> 
+                <div class="infos-item">
+                  <span class="infos-icon attr-icon"></span> <p class="subtitle is-6"> : {{ data.attribute }} </p> 
                 </div>
               </b-tooltip>
               <b-tooltip label="Age" position="is-bottom">
-                <div>
-                  <span class="infos-icon age-icon"></span> <p class="subtitle is-6">{{ data.age }}</p> 
+                <div class="infos-item">
+                  <span class="infos-icon age-icon"></span> <p class="subtitle is-6"> : {{ data.age }}</p> 
                 </div>
               </b-tooltip>
               <b-tooltip label="Weapons" position="is-bottom">
-                <div>
-                  <span class="infos-icon weapons-icon"></span><p class="subtitle is-6">{{ data.weapons }}</p> 
+                <div class="infos-item">
+                  <span class="infos-icon weapons-icon"></span><p class="subtitle is-6"> : {{ data.weapons }}</p> 
                 </div>
               </b-tooltip>
             </div>
@@ -63,28 +65,31 @@ export default {
   methods: {
     async deleteKnight(id) {
       this.$emit('delete-knight', id)
+    },
+    goToDetail(id) {
+      return this.$router.push({ path: `/knight/${id}` });
     }
   }
 }
 </script>
 
 <style lang=scss scoped>
+@import '@/assets/scss/mixins.scss';
 .card {
   margin: 20px 0;
   figure.is-80x80 {
-    height: 80px;
-    width: 80px;
+    height: 120px;
+    width: 120px;
   }
 }
   
 .content {
   border-top: 1px solid #1D4241;
-  padding-top: 15px;
+  padding-top: $gutter;
 }
 
 .media-content {
   div {
-    margin: 10px;
     p {
       margin-bottom: 5px;
     }
@@ -102,27 +107,20 @@ export default {
 }
 .left {
   text-align: left;
+  display: flex;
+  align-items: center;
 }
 
 .content{
   .infos {
     display: flex;
     div {
-      margin: 0 10px;
+      margin: 0 $gutter;
       text-align: center;
     }
   }
 }
 
-.infos-icon {
-  width: 28px;
-  height: 28px;
-  display: block;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  margin: 0 auto;
-}
 .attr-icon {
   background-image: url('@/assets/icons/attribute.png');
 }
@@ -132,6 +130,17 @@ export default {
 .weapons-icon {
   background-image: url('@/assets/icons/weapons.png');
 }
+ .infos-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+    .subtitle {
+      margin-left: 10px;
+    }
+    .infos-icon {
+      @include atributes-label();
+  }
 
+ }
 
 </style>
